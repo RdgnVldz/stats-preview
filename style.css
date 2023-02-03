@@ -1,0 +1,146 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+}
+
+.stat-card{
+    max-width: 950px;
+    background-color: hsl(244, 38%, 16%);
+    height: 349px;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+}
+
+.stats{
+    padding: 40px;
+    text-align: left;
+}
+
+.stat-title{
+    font-family: 'Inter';
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.stat-title span{
+    color: hsl(277, 64%, 61%);
+}
+.stats-desc p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+.stats-count{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p.plus{
+    font-family: 'Inter';
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.companies, .templates, .queries{
+    margin-top: 30px;
+    max-width: 100%;
+    width: auto;
+    text-align: left;
+}
+
+p.stat{
+    font-size: 16px;
+    font-family: Lexend Deca;
+    text-transform: capitalize;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+}
+
+.image{
+    position: relative;
+    width: 475px;
+    height: 349px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: hsl(277, 64%, 61%);
+}
+
+.image picture img, .image picture source{
+    mix-blend-mode: multiply;
+    width: 475px;
+}
+
+@media screen and (max-width:375px){
+    .stats{
+        padding:30px;
+    }
+    .stat-card{
+        width: 300px;
+        height: 600px;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .image{
+        width: 300px;
+        height: 200px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .image picture img, .image picture source{
+        width: 300px;
+        height: 200px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .stats{
+        text-align: center;
+    }
+    
+    .stat-title{
+        font-size: .7rem;
+    }
+    .stats-desc p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom:10px;
+    }
+       
+    .stats-count{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    p.plus{
+        font-size: 1.3rem;
+    }
+    .companies, .templates, .queries{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    p.stat{
+        font-size: 12px;
+    }
+    
+}
